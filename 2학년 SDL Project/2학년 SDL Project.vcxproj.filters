@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{81342d64-a8ae-4a3b-8079-d63201e88bab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Manager">
+      <UniqueIdentifier>{ce6f19fb-d823-4df0-851f-47c99096323b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Manager\cImageManager">
+      <UniqueIdentifier>{c549619c-d7af-497b-ae47-f3c5c90a806e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Manager\cSceneManager">
+      <UniqueIdentifier>{8e57a29b-60f7-4b47-b331-aeba743956c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Manager\cEventManager">
+      <UniqueIdentifier>{b74494f8-be1f-43ef-9057-a1f0a6a12382}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Main">
+      <UniqueIdentifier>{6bbeb9fc-88dd-466c-9929-f5d1f1bfe1d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\cSystem">
+      <UniqueIdentifier>{77d1b5c2-52fc-41e9-a282-2d9d5177bb8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\cScene">
+      <UniqueIdentifier>{1595c271-2b29-45e3-aeb3-e95be116cdd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\cScene\cIntroScene">
+      <UniqueIdentifier>{f2724457-e8ce-427a-b71a-625e14eddd5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\cScene\cIngameScene">
+      <UniqueIdentifier>{3059666c-23cf-4af4-9eb9-1885110e819b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\cObject">
+      <UniqueIdentifier>{25574dbb-8887-4d36-ac4f-c5e37cf23dc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\cObject\cButtonList">
+      <UniqueIdentifier>{9e44fc93-fc21-438c-ae31-8e1e2b3f2f79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\cObject\cBaseImage">
+      <UniqueIdentifier>{d8345657-1aae-493a-9f4b-09644215e646}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\cObject\cButton">
+      <UniqueIdentifier>{fbe4a0b4-e657-4c9e-a961-a8c8dab27878}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\cObject\cPicture">
+      <UniqueIdentifier>{37c60b4e-65ca-4acf-95c4-6e2c52440f18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\cObject\cAnimationButton">
+      <UniqueIdentifier>{30fd980f-a9f5-443f-a02e-f18507fac076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\cScene\cHowToScene">
+      <UniqueIdentifier>{d2a52ded-f441-40af-b119-0f3321db4d7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\cScene\cCreditScene">
+      <UniqueIdentifier>{580ad52e-06cc-45eb-8127-03baec250ee0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Manager\cMusicManager">
+      <UniqueIdentifier>{a8ba35b1-901d-42b5-9e9f-215887c813a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\cObject\cCharAni">
+      <UniqueIdentifier>{768fc2c2-c228-4e80-9356-11a7d9685f3d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cSystem.h">
+      <Filter>Core\cSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="cImageManager.h">
+      <Filter>Core\Manager\cImageManager</Filter>
+    </ClInclude>
+    <ClInclude Include="cSceneManager.h">
+      <Filter>Core\Manager\cSceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="cBaseScene.h">
+      <Filter>Core\cScene</Filter>
+    </ClInclude>
+    <ClInclude Include="cIntroScene.h">
+      <Filter>Core\cScene\cIntroScene</Filter>
+    </ClInclude>
+    <ClInclude Include="cButtonList.h">
+      <Filter>Core\cObject\cButtonList</Filter>
+    </ClInclude>
+    <ClInclude Include="cEventManager.h">
+      <Filter>Core\Manager\cEventManager</Filter>
+    </ClInclude>
+    <ClInclude Include="cIngameScene.h">
+      <Filter>Core\cScene\cIngameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="cBaseImage.h">
+      <Filter>Core\cObject\cBaseImage</Filter>
+    </ClInclude>
+    <ClInclude Include="cButton.h">
+      <Filter>Core\cObject\cButton</Filter>
+    </ClInclude>
+    <ClInclude Include="cPicture.h">
+      <Filter>Core\cObject\cPicture</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleTone.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="cAnimationButton.h">
+      <Filter>Core\cObject\cAnimationButton</Filter>
+    </ClInclude>
+    <ClInclude Include="cHowToScene.h">
+      <Filter>Core\cScene\cHowToScene</Filter>
+    </ClInclude>
+    <ClInclude Include="cCreditScene.h">
+      <Filter>Core\cScene\cCreditScene</Filter>
+    </ClInclude>
+    <ClInclude Include="cMusicManager.h">
+      <Filter>Core\Manager\cMusicManager</Filter>
+    </ClInclude>
+    <ClInclude Include="cCharAni.h">
+      <Filter>Core\cObject\cCharAni</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cSystem.cpp">
+      <Filter>Core\cSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="cImageManager.cpp">
+      <Filter>Core\Manager\cImageManager</Filter>
+    </ClCompile>
+    <ClCompile Include="cSceneManager.cpp">
+      <Filter>Core\Manager\cSceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="cBaseScene.cpp">
+      <Filter>Core\cScene</Filter>
+    </ClCompile>
+    <ClCompile Include="cIntroScene.cpp">
+      <Filter>Core\cScene\cIntroScene</Filter>
+    </ClCompile>
+    <ClCompile Include="2학년 SDL Project.cpp">
+      <Filter>Core\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="cButtonList.cpp">
+      <Filter>Core\cObject\cButtonList</Filter>
+    </ClCompile>
+    <ClCompile Include="cEventManager.cpp">
+      <Filter>Core\Manager\cEventManager</Filter>
+    </ClCompile>
+    <ClCompile Include="cIngameScene.cpp">
+      <Filter>Core\cScene\cIngameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="cBaseImage.cpp">
+      <Filter>Core\cObject\cBaseImage</Filter>
+    </ClCompile>
+    <ClCompile Include="cButton.cpp">
+      <Filter>Core\cObject\cButton</Filter>
+    </ClCompile>
+    <ClCompile Include="cPicture.cpp">
+      <Filter>Core\cObject\cPicture</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="cAnimationButton.cpp">
+      <Filter>Core\cObject\cAnimationButton</Filter>
+    </ClCompile>
+    <ClCompile Include="cHowToScene.cpp">
+      <Filter>Core\cScene\cHowToScene</Filter>
+    </ClCompile>
+    <ClCompile Include="cCreditScene.cpp">
+      <Filter>Core\cScene\cCreditScene</Filter>
+    </ClCompile>
+    <ClCompile Include="cMusicManager.cpp">
+      <Filter>Core\Manager\cMusicManager</Filter>
+    </ClCompile>
+    <ClCompile Include="cCharAni.cpp">
+      <Filter>Core\cObject\cCharAni</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
