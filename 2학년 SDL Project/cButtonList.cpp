@@ -26,7 +26,7 @@ void cButtonList::Initiailze()
 		m_liButtonList.push_back(c);
 
 		c = new cAnimationButton;
-		c->Initiailze(".\\image\\gExit.bmp", "Exit", 950, 500, 135, 68, 
+		c->Initiailze(".\\image\\gExit.bmp", "Exit", 950, 500, 134, 67, 
 			[](SDL_Rect &realrc, SDL_Rect &imageinfo, const char *musicname) { realrc.x += imageinfo.w; SDL_bool *b = EVENTMANAGER->GetSDLbool(); *b = SDL_FALSE; });
 		m_liButtonList.push_back(c);
 
