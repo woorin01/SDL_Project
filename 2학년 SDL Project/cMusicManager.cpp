@@ -138,7 +138,8 @@ void cMusicManager::SetMusic(const char *key)
 		}
 		else
 		{
-			StopMusic();
+			if (m_bIsMusicPlaying)
+				StopMusic();
 		}
 	}
 }

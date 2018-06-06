@@ -23,6 +23,22 @@ void cCharAni::Update()
 					m_bIsDelayInit = true;
 					m_bIsAnimation = true;
 				}
+				if (0 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 50)
+				{
+					m_bIsAnimation = true;
+				}
+				else if (76 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 89)
+				{
+					m_bIsAnimation = true;
+				}
+				else if (101 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 112)
+				{
+					m_bIsAnimation = true;
+				}
+				else
+				{
+					m_bIsAnimation = false;
+				}
 			}
 			else if (m_iAniAmount == RUTE)
 			{				
@@ -31,6 +47,22 @@ void cCharAni::Update()
 					m_iMusicDelay = 400;
 					m_bIsDelayInit = true;
 					m_bIsAnimation = true;
+				}
+				if (25 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 33)
+				{
+					m_bIsAnimation = true;
+				}
+				else if (50 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 60)
+				{
+					m_bIsAnimation = true;
+				}
+				else if (69 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 78)
+				{
+					m_bIsAnimation = true;
+				}
+				else
+				{
+					m_bIsAnimation = false;
 				}
 			}
 			else if (m_iAniAmount == SINGER)
@@ -41,6 +73,14 @@ void cCharAni::Update()
 					m_bIsDelayInit = true;
 					m_bIsAnimation = true;
 				}
+				if (18 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 60)
+				{
+					m_bIsAnimation = true;
+				}
+				else
+				{
+					m_bIsAnimation = false;
+				}
 			}
 			else if (m_iAniAmount == BEAR)
 			{
@@ -48,6 +88,22 @@ void cCharAni::Update()
 				{
 					m_iMusicDelay = 400;
 					m_bIsDelayInit = true;
+					m_bIsAnimation = false;
+				}
+				if (33 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 55)
+				{
+					m_bIsAnimation = true;
+				}
+				else if (66 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 69)
+				{
+					m_bIsAnimation = true;
+				}
+				else if (74 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 83)
+				{
+					m_bIsAnimation = true;
+				}
+				else
+				{
 					m_bIsAnimation = false;
 				}
 			}
@@ -59,7 +115,22 @@ void cCharAni::Update()
 					m_bIsDelayInit = true;
 					m_bIsAnimation = true;
 				}
-
+				if (35 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 45)
+				{
+					m_bIsAnimation = true;
+				}
+				else if (50 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 60)
+				{
+					m_bIsAnimation = true;
+				}
+				else if (91 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 98)
+				{
+					m_bIsAnimation = true;
+				}
+				else
+				{
+					m_bIsAnimation = false;
+				}
 			}
 		}
 		else if (MUSICMANAGER->GetNowMusicName() == "./music/Young_Crawn.mp3")
@@ -226,23 +297,23 @@ void cCharAni::Update()
 					m_bIsDelayInit = true;
 					m_bIsAnimation = false;
 				}
-				if (4 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 33)
+				if (11 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 18)
 				{
 					m_bIsAnimation = true;
 				}
-				else if (41 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 100)
+				else if (27 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 29)
 				{
 					m_bIsAnimation = true;
 				}
-				else if (115 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 123)
+				else if (47 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 60)
 				{
 					m_bIsAnimation = true;
 				}
-				else if (180 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 251)
+				else if (75 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 86)
 				{
 					m_bIsAnimation = true;
 				}
-				else if (251 <= MUSICMANAGER->GetMusicSec())
+				else if (98 <= MUSICMANAGER->GetMusicSec())
 				{
 					m_bIsAnimation = true;
 				}
@@ -259,15 +330,15 @@ void cCharAni::Update()
 					m_bIsDelayInit = true;
 					m_bIsAnimation = false;
 				}
-				if (100 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 130)
+				if (11 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 18)
 				{
 					m_bIsAnimation = true;
 				}
-				else if (150 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 180)
+				else if (32 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 41)
 				{
 					m_bIsAnimation = true;
 				}
-				else if (224 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 289)
+				else if (54 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 60)
 				{
 					m_bIsAnimation = true;
 				}
@@ -293,15 +364,15 @@ void cCharAni::Update()
 					m_bIsDelayInit = true;
 					m_bIsAnimation = false;
 				}
-				if (94 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 165)
+				if (18 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 33)
 				{
 					m_bIsAnimation = true;
 				}
-				else if (180 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 224)
+				else if (47 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 55)
 				{
 					m_bIsAnimation = true;
 				}
-				else if (258 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 289)
+				else if (71 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 92)
 				{
 					m_bIsAnimation = true;
 				}
@@ -318,7 +389,22 @@ void cCharAni::Update()
 					m_bIsDelayInit = true;
 					m_bIsAnimation = true;
 				}
-
+				if (18 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 30)
+				{
+					m_bIsAnimation = true;
+				}
+				else if (42 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 60)
+				{
+					m_bIsAnimation = true;
+				}
+				else if (74 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 89)
+				{
+					m_bIsAnimation = true;
+				}
+				else
+				{
+					m_bIsAnimation = false;
+				}
 			}
 		}
 		else if (MUSICMANAGER->GetNowMusicName() == "./music/LCrawn.mp3")
