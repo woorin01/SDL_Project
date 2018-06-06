@@ -44,7 +44,7 @@ void cButtonList::Initiailze()
 		m_liButtonList.push_back(c);
 
 		c = new cAnimationButton;
-		c->Initiailze(".\\image\\StopAni.bmp", "Stop", 1000, 10, 16, 20,
+		c->Initiailze(".\\image\\StopAni.bmp", "Stop", 1200, 20, 16, 20,
 			[](SDL_Rect &realrc, SDL_Rect &imageinfo, const char *musicname) { realrc.x += imageinfo.w;  MUSICMANAGER->PauseMusic(); });
 		m_liButtonList.push_back(c);
 
@@ -117,7 +117,7 @@ void cButtonList::Initiailze()
 	else if (SCENEMANAGER->GetNowScene() == HOWTO)
 	{
 		cAnimationButton *c = new cAnimationButton;
-		c->Initiailze(".\\image\\HowToExitButton1.bmp", "HowToExitButton", 1240, 9, 17, 15, 
+		c->Initiailze(".\\image\\HowToExitButton1.bmp", "HowToExitButton", 1248, 12, 17, 15, 
 						[](SDL_Rect &realrc, SDL_Rect &imageinfo, const char *musicname) { realrc.x += imageinfo.w; SCENEMANAGER->ChangeScene("Intro", INTRO); });
 		m_liButtonList.push_back(c);
 
