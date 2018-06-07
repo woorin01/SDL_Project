@@ -29,6 +29,7 @@ public:
 
 public:
 	void Initiailze();
+	void BGMusic();
 	void PlayMusic();
 	void PauseMusic();
 	void StopMusic();

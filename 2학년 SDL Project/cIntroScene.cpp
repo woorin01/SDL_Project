@@ -20,6 +20,8 @@ void cIntroScene::Initiailze()
 {
 	m_pcIntroBG->Initiailze("./image/IntroBG.bmp", "IntroBG", 0, 0, WINSIZEX, WINSIZEY);
 	m_pcIntroBtnList->Initiailze();
+
+	MUSICMANAGER->BGMusic();
 }
 
 void cIntroScene::Update()

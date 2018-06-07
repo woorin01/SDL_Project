@@ -27,6 +27,7 @@ void cMusicManager::Initiailze()
 	AddMusic("Midnight Circus", "./music/Midnight_Circus.mp3");
 	AddMusic("LeeSang Crawn", "./music/LCrawn.mp3");
 	AddMusic("Kim", "./music/Kim.mp3");
+	AddMusic("SIGNAL", "./music/SIGNAL.mp3");
 
 	m_bIsMusicPlaying = false;
 	m_bIsMusicStop = false;
@@ -35,6 +36,21 @@ void cMusicManager::Initiailze()
 
 	m_dwMusicCount = GetTickCount();
 	m_iMusicCount = 0;
+}
+
+void cMusicManager::BGMusic()
+{
+	if (SCENEMANAGER->GetNowScene() == INGAME)
+	{
+		StopMusic();
+	}
+	else
+	{
+		SetMusic("SIGNAL");
+		PlayMusic();
+	}
+
+
 }
 
 void cMusicManager::PlayMusic()
@@ -76,6 +92,7 @@ void cMusicManager::StopMusic()
 {
 	m_bIsMusicPlaying = false;
 	m_bIsMusicStop = true;
+	b = false;
 
 	string stop = "stop ";
 
@@ -103,6 +120,8 @@ void cMusicManager::Update()
 		m_bIsMusicPlaying = true;
 		b = false;
 	}
+
+	cout << m_bIsMusicPlaying << endl;
 
 }
 

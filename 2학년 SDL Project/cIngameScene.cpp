@@ -49,14 +49,15 @@ void cIngameScene::Initiailze()
 	m_pcIngameBG->Initiailze("./image/IngameBG.bmp", "IngameBG", 0, 0, WINSIZEX, WINSIZEY);
 	m_pcIngameSongPic->Initiailze("./image/SongList.bmp", "IngameSongPic", 1030, 150, 216, 351);
 
-	m_pcMell->Initiailze("./image/Mell.bmp", "Mell", 100, 365, 136, 238, MELL, [](SDL_Rect &realrc, SDL_Rect &imageinfo, int GunW) { if (realrc.x >= GunW - imageinfo.w) { realrc.x = 0; } else { realrc.x += imageinfo.w; } });
-	m_pcRute->Initiailze("./image/Rute.bmp", "Rute", 280, 365, 187, 244, RUTE, [](SDL_Rect &realrc, SDL_Rect &imageinfo, int GunW) { if (realrc.x >= GunW - imageinfo.w) { realrc.x = 0; } else { realrc.x += imageinfo.w; } });
+	m_pcMell->Initiailze("./image/Mell.bmp", "Mell", 280, 365, 136, 238, MELL, [](SDL_Rect &realrc, SDL_Rect &imageinfo, int GunW) { if (realrc.x >= GunW - imageinfo.w) { realrc.x = 0; } else { realrc.x += imageinfo.w; } });
+	m_pcRute->Initiailze("./image/Rute.bmp", "Rute", 100, 365, 187, 244, RUTE, [](SDL_Rect &realrc, SDL_Rect &imageinfo, int GunW) { if (realrc.x >= GunW - imageinfo.w) { realrc.x = 0; } else { realrc.x += imageinfo.w; } });
 	m_pcSinger->Initiailze("./image/Singer.bmp", "Singer", 500, 365, 209, 247, SINGER, [](SDL_Rect &realrc, SDL_Rect &imageinfo, int GunW) { if (realrc.x >= GunW - imageinfo.w) { realrc.x = 0; } else { realrc.x += imageinfo.w; } } );
 	m_pcBear->Initiailze("./image/Bear.bmp", "Bear", 870, 320, 145, 289, BEAR, [](SDL_Rect &realrc, SDL_Rect &imageinfo, int GunW) { if (realrc.x >= GunW - imageinfo.w) { realrc.x = 0; } else { realrc.x += imageinfo.w; } });
 	m_pcMandolrin->Initiailze("./image/Mandolrin.bmp", "Mandolrin", 670, 375, 210, 228, MANDOLRIN, [](SDL_Rect &realrc, SDL_Rect &imageinfo, int GunW) { if (realrc.x >= GunW - imageinfo.w) { realrc.x = 0; } else { realrc.x += imageinfo.w; } });
 
 	m_pcIngameBtnList->Initiailze();
 
+	MUSICMANAGER->BGMusic();
 }
 
 void cIngameScene::Update()
