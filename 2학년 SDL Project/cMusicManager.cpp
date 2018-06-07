@@ -26,7 +26,7 @@ void cMusicManager::Initiailze()
 	AddMusic("Pierrots Tears", "./music/Pierrots_Tears.mp3");
 	AddMusic("Midnight Circus", "./music/Midnight_Circus.mp3");
 	AddMusic("LeeSang Crawn", "./music/LCrawn.mp3");
-	AddMusic("What Is Love", "./music/What_Is_Love.mp3");
+	AddMusic("Kim", "./music/Kim.mp3");
 
 	m_bIsMusicPlaying = false;
 	m_bIsMusicStop = false;

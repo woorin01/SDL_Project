@@ -95,9 +95,9 @@ void cButtonList::Initiailze()
 				{
 					realrc.x += imageinfo.w;
 				}
-				MUSICMANAGER->SetMusic("What Is Love");
+				MUSICMANAGER->SetMusic("Kim");
 				MUSICMANAGER->PlayMusic();
-			}, "./music/What_Is_Love.mp3");
+			}, "./music/Kim.mp3");
 		m_liButtonList.push_back(c);
 
 		c = new cAnimationButton;

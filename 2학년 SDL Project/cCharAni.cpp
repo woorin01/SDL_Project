@@ -13,7 +13,7 @@ void cCharAni::Update()
 
 	if (MUSICMANAGER->IsPlayingMusic())
 	{
-		if (MUSICMANAGER->GetNowMusicName() == "./music/What_Is_Love.mp3")
+		if (MUSICMANAGER->GetNowMusicName() == "./music/Kim.mp3")
 		{
 			if (m_iAniAmount == MELL)
 			{	
@@ -69,7 +69,7 @@ void cCharAni::Update()
 			{
 				if (!m_bIsDelayInit)
 				{
-					m_iMusicDelay = 50;
+					m_iMusicDelay = 75;
 					m_bIsDelayInit = true;
 					m_bIsAnimation = true;
 				}
@@ -184,7 +184,7 @@ void cCharAni::Update()
 			{
 				if (!m_bIsDelayInit)
 				{
-					m_iMusicDelay = 50;
+					m_iMusicDelay = 75;
 					m_bIsDelayInit = true;
 					m_bIsAnimation = true;
 				}
@@ -247,6 +247,22 @@ void cCharAni::Update()
 					m_bIsDelayInit = true;
 					m_bIsAnimation = false;
 				}
+				if (0 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 19)
+				{
+					m_bIsAnimation = true;
+				}
+				else if (40 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 50)
+				{
+					m_bIsAnimation = true;
+				}
+				else if (57 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 60)
+				{
+					m_bIsAnimation = true;
+				}
+				else
+				{
+					m_bIsAnimation = false;
+				}
 			}
 			else if (m_iAniAmount == RUTE)
 			{
@@ -256,13 +272,37 @@ void cCharAni::Update()
 					m_bIsDelayInit = true;
 					m_bIsAnimation = false;
 				}
+				if (9 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 18)
+				{
+					m_bIsAnimation = true;
+				}
+				else if (27 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 50)
+				{
+					m_bIsAnimation = true;
+				}
+				else if (64 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 73)
+				{
+					m_bIsAnimation = true;
+				}
+				else
+				{
+					m_bIsAnimation = false;
+				}
 			}
 			else if (m_iAniAmount == SINGER)
 			{
 				if (!m_bIsDelayInit)
 				{
-					m_iMusicDelay = 50;
+					m_iMusicDelay = 75;
 					m_bIsDelayInit = true;
+					m_bIsAnimation = false;
+				}
+				if (18 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 60)
+				{
+					m_bIsAnimation = true;
+				}
+				else
+				{
 					m_bIsAnimation = false;
 				}
 			}
@@ -274,6 +314,22 @@ void cCharAni::Update()
 					m_bIsDelayInit = true;
 					m_bIsAnimation = false;
 				}
+				if (19 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 39)
+				{
+					m_bIsAnimation = true;
+				}
+				else if (55 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 60)
+				{
+					m_bIsAnimation = true;
+				}
+				else if (83 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 92)
+				{
+					m_bIsAnimation = true;
+				}
+				else
+				{
+					m_bIsAnimation = false;
+				}
 		
 			}
 			else if (m_iAniAmount == MANDOLRIN)
@@ -283,6 +339,22 @@ void cCharAni::Update()
 					m_iMusicDelay = 500;
 					m_bIsDelayInit = true;
 					m_bIsAnimation = true;
+				}
+				if (19 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 39)
+				{
+					m_bIsAnimation = true;
+				}
+				else if (55 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 60)
+				{
+					m_bIsAnimation = true;
+				}
+				else if (78 <= MUSICMANAGER->GetMusicSec() && MUSICMANAGER->GetMusicSec() <= 88)
+				{
+					m_bIsAnimation = true;
+				}
+				else
+				{
+					m_bIsAnimation = false;
 				}
 
 			}
@@ -351,7 +423,7 @@ void cCharAni::Update()
 			{
 				if (!m_bIsDelayInit)
 				{
-					m_iMusicDelay = 50;
+					m_iMusicDelay = 75;
 					m_bIsDelayInit = true;
 					m_bIsAnimation = true;
 				}
@@ -464,7 +536,7 @@ void cCharAni::Update()
 			{
 				if (!m_bIsDelayInit)
 				{
-					m_iMusicDelay = 50;
+					m_iMusicDelay = 75;
 					m_bIsDelayInit = true;
 					m_bIsAnimation = true;
 				}
